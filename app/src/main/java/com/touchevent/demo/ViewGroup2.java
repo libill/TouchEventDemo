@@ -23,16 +23,16 @@ public class ViewGroup2 extends LinearLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         Log.i(TAG, "dispatchTouchEvent    action:" + StringUtils.getMotionEventName(ev));
-        Log.d(TAG, "onInterceptTouchEvent action:" + StringUtils.getMotionEventName(ev) + " " + true);
-        return true;
+        boolean superReturn = super.dispatchTouchEvent(ev);
+        Log.d(TAG, "dispatchTouchEvent    action:" + StringUtils.getMotionEventName(ev) + " " + superReturn);
+        return superReturn;
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.i(TAG, "onInterceptTouchEvent action:" + StringUtils.getMotionEventName(ev));
-        boolean superReturn = super.onInterceptTouchEvent(ev);
-        Log.d(TAG, "onInterceptTouchEvent action:" + StringUtils.getMotionEventName(ev) + " " + superReturn);
-        return superReturn;
+        Log.d(TAG, "onInterceptTouchEvent action:" + StringUtils.getMotionEventName(ev) + " " + true);
+        return true;
     }
 
     @Override
