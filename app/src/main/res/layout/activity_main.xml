@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.touchevent.demo.MyActivity">
+
+    <com.touchevent.demo.ViewGroup1
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent">
+
+        <com.touchevent.demo.ViewGroup2
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="50dp"
+            android:background="@color/colorPrimary">
+
+            <com.touchevent.demo.ViewGroup3
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="50dp"
+                android:background="@color/colorPrimaryDark">
+
+
+            </com.touchevent.demo.ViewGroup3>
+
+
+        </com.touchevent.demo.ViewGroup2>
+
+
+    </com.touchevent.demo.ViewGroup1>
+
+</android.support.constraint.ConstraintLayout>
